@@ -1,5 +1,33 @@
-const num1 = 5;
-const num2 = 10;
+// Array de posibles palabras
+const subjects = ["El programador", "La aplicación", "Un servidor", "Node.js"];
+const actions = ["escribe", "construye", "ejecuta", "depura"];
+const objects = ["código", "soluciones", "algoritmos", "consultas"];
+const complements = [
+  "rápidamente",
+  "sin errores",
+  "de manera eficiente",
+  "con pasión",
+];
 
-console.log(num1 + num2);
-console.log("La suma se realizo con exito!");
+// Función que elige una palabra al azar de cada array
+function getRandomWord(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+// Función que genera un verso aleatorio
+function generateVerse() {
+  const subject = getRandomWord(subjects);
+  const action = getRandomWord(actions);
+  const object = getRandomWord(objects);
+  const complement = getRandomWord(complements);
+
+  return `${subject} ${action} ${object} ${complement}.`;
+}
+
+// Generar y mostrar 3 versos aleatorios
+for (let i = 0; i < 3; i++) {
+  console.log(generateVerse());
+}
+
+// Despedida original
+console.log("\n¡Gracias por ejecutar este poema generado por Node.js!");
