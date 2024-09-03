@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/estrelladev/curso-node/issues"
   },
-  "homepage": "https://github.com/estrelladev/curso-node#readme"
+  "homepage": "https://github.com/estrelladev/curso-node#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }

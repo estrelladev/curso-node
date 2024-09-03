@@ -42,7 +42,7 @@ const Repository = require("./models/repository");
 const activityRepository = new Repository();
 
 // Creamos nuevas instancias de Activity
-const coding = new Activity("Programar", 120);
+const coding = new Activity("Loquear", 120);
 const exercise = new Activity("Hacer ejercicio", 60);
 
 // Añadimos las actividades al repositorio
